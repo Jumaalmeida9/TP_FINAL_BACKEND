@@ -6,7 +6,7 @@
         Nome	TEXT NOT NULL,
         PRIMARY KEY(id AUTOINCREMENT)
     )";
-       
+            
     $pdo->query($queryCriaTabelaCategorias);
 
     $queryCriaTabelaProdutos = "CREATE TABLE IF NOT EXISTS produtos (
@@ -28,9 +28,9 @@
         FOREIGN KEY(produto_id) REFERENCES produtos(id),
         PRIMARY KEY(id)
     )";
-
+         
     $pdo->query($queryCriaTabelaEstoque);
 
-
+                             
 
 ?>
