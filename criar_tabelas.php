@@ -3,7 +3,7 @@
 
     $queryCriaTabelaCategorias = "CREATE TABLE IF NOT EXISTS categorias (
         id	INTEGER NOT NULL,
-        Nome	TEXT NOT NULL,
+        nome	TEXT NOT NULL,
         PRIMARY KEY(id AUTOINCREMENT)
     )";
             
@@ -11,7 +11,7 @@
 
     $queryCriaTabelaProdutos = "CREATE TABLE IF NOT EXISTS produtos (
         id	INTEGER NOT NULL,
-        Nome	TEXT NOT NULL,
+        nome	TEXT NOT NULL,
         Descrição	TEXT,
         Preço	REAL NOT NULL,
         Categoria_id	INTEGER,
