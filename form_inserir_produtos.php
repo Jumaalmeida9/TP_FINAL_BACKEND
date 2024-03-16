@@ -23,22 +23,24 @@
                     $pdo = new PDO("sqlite:estoque.db");
 
                     $query_select_categorias = "SELECT * FROM categorias";
-                    $categorias = $pdo->query
-                    ($query_select_categorias);
+                    $categorias = $pdo->query($query_select_categorias);
                     foreach ($categorias as $categoria) {
 
         
                         
-                     echo "<options values=\"".$categoria["id"]."\">".$categoria["nome"]."</option>"; 
-
+                     echo "<option value=\"".$categoria["id"]."\">".$categoria["nome"]."</option>"; 
 
                     }
+
                     ?>
-                    <!--option value="1">Arroz</option-->
+                   
             </select>
 
                     <button type="submit">Enviar</button>
             
             </form>
+
+        
+
         </body>
 </html>
