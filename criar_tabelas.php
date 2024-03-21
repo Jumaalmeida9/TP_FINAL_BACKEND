@@ -1,4 +1,7 @@
 <?php
+    
+
+    
     $pdo = new PDO("sqlite:estoque.db");
 
     $queryCriaTabelaCategorias = "CREATE TABLE IF NOT EXISTS categorias (
@@ -31,6 +34,9 @@
          
     $pdo->query($queryCriaTabelaEstoque);
 
-                             
+    
+    
+
+
 
 ?>
